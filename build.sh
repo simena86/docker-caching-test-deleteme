@@ -2,7 +2,7 @@
 # Version tag needs to be dependent on all the files that will affect
 # the generated image. Currently, only the dockerfile and Python
 # requirements.
-VERSION_TAG="latest"
+VERSION_TAG="v1.1.1"
 
 echo "Image version: ${VERSION_TAG}"
 echo "Commit SHA1:   ${CIRCLE_SHA1}"
