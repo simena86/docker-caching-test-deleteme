@@ -7,8 +7,8 @@ dependencies:
     - "~/docker"
   override:
     - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
-    - docker build -t imerso/slettmeg .
-    - mkdir -p ~/docker; docker save imerso/scan-worker:test > ~/docker/image.tar
+    - docker build -t imerso/slettmeg:test .
+    - mkdir -p ~/docker; docker save imerso/slettmeg:test > ~/docker/image.tar
 
 test:
   override:

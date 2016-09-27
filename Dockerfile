@@ -8,11 +8,11 @@ RUN apt-get update && apt-get install -y python python-pip python-virtualenv sup
 
 # Build IfcOpenshell
 # Heavily based on .travis.yml in the IfcOpenshell repo
-RUN apt-get install -y libboost1.55-dev
-RUN apt-get install -y libboost-regex1.55-dev
-RUN apt-get install -y libboost-system1.55-dev
-RUN apt-get install -y libboost-thread1.55-dev
-RUN apt-get install -y libboost-program-options1.55-dev
+#RUN apt-get install -y libboost1.55-dev
+#RUN apt-get install -y libboost-regex1.55-dev
+#RUN apt-get install -y libboost-system1.55-dev
+#RUN apt-get install -y libboost-thread1.55-dev
+#RUN apt-get install -y libboost-program-options1.55-dev
 
 # Setup flask application
 RUN mkdir -p /deploy/app
