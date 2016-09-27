@@ -8,7 +8,7 @@ dependencies:
   override:
     - ls ~/docker 
     - docker images
-    - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
+    - if [[ -e ~/docker/image.tar ]]; then echo "cached files exists!" ; docker load -i ~/docker/image.tar; fi
     - docker images
     - ls ~/docker
     - docker build -t imerso/slettmeg:test .
