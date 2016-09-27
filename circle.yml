@@ -14,7 +14,7 @@ dependencies:
     - docker build -t imerso/slettmeg:v1.1.1 .
     #- mkdir -p ~/docker; docker save imerso/slettmeg:test > ~/docker/image.tar
 
-test:
-  override:
-    - docker run -d imerso/slettmeg:v1.1.1
+  #test:
+  #override:
+  #  - docker run -d imerso/slettmeg:v1.1.1
 
