@@ -6,7 +6,7 @@ dependencies:
   cache_directories:
     - "~/docker"
   override:
-    ./build.sh
+    - ./build.sh
     #- ls ~/docker 
     #- docker images
     #- if [[ -e ~/docker/image.tar ]]; then echo "cached files exists!" ; docker load -i ~/docker/image.tar; fi
