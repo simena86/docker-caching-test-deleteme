@@ -24,7 +24,7 @@ mkdir -p "$CACHE_DIR"
 # If we already have an image built on the same dependencies, just
 # re-use it.
 if [[ -e "$IMAGE_ARCHIVE" ]]; then
-    echo "-----> Loading existing image archive"
+    echo "----> Loading existing image archive"
     docker load -i "$IMAGE_ARCHIVE"
 else
     echo "=====> Building image: ${IMAGE_FULL_NAME}"
