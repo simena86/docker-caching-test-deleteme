@@ -26,6 +26,8 @@ mkdir -p "$CACHE_DIR"
 if [[ -e "$IMAGE_ARCHIVE" ]]; then
     echo "----> Loading existing image archive"
     docker load -i "$IMAGE_ARCHIVE"
+    echo "----> Current docker images:"
+    docker images
 else
     echo "=====> Building image: ${IMAGE_FULL_NAME}"
     docker build -t "$IMAGE_FULL_NAME" .
