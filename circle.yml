@@ -17,5 +17,5 @@ dependencies:
 
 test:
   override:
-    - docker run -d imerso/slettmeg:test
+    - docker run -d imerso/slettmeg:latest
 
