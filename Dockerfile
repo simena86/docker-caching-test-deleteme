@@ -4,7 +4,7 @@ MAINTAINER Simen Andresen <simena86@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y python python-pip python-virtualenv supervisor vim apt-utils git
+RUN apt-get update && apt-get install -y vim
 
 # Build IfcOpenshell
 # Heavily based on .travis.yml in the IfcOpenshell repo
@@ -23,7 +23,7 @@ RUN mkdir -p /deploy/auth
 # Setup supervisord
 RUN mkdir -p /var/log/supervisor
 
-CMD ["sleep", "10"]
+CMD ["sleep", "3"]
 
 
 
