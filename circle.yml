@@ -6,12 +6,12 @@ dependencies:
   cache_directories:
     - "~/docker"
   override:
-    - ./build.sh
-    #- ls ~/docker 
-    #- docker images
+    - ls ~/docker 
+    - docker images
+    - bash build.sh
     #- if [[ -e ~/docker/image.tar ]]; then echo "cached files exists!" ; docker load -i ~/docker/image.tar; fi
-    #- docker images
-    #- ls ~/docker
+    - docker images
+    - ls ~/docker
     #- docker build -t imerso/slettmeg:test .
     #- mkdir -p ~/docker; docker save imerso/slettmeg:test > ~/docker/image.tar
 

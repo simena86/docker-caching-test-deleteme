@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # Version tag needs to be dependent on all the files that will affect
 # the generated image. Currently, only the dockerfile and Python
