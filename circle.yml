@@ -11,7 +11,7 @@ dependencies:
     #- mkdir -p ~/docker; docker save imerso/slettmeg:test > ~/docker/image.tar
     - if [[ -e ~/docker/test.txt ]]; then echo "is there not"; echo "asdf" >> ~/docker/test.txt; fi
 
-test:
-  override:
-    - docker run -d imerso/slettmeg:test
+  #test:
+  #override:
+  #  - docker run -d imerso/slettmeg:test
 
