@@ -9,7 +9,9 @@ dependencies:
     #- if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
     #- docker build -t imerso/slettmeg:test .
     #- mkdir -p ~/docker; docker save imerso/slettmeg:test > ~/docker/image.tar
+    - cat ~/docker/test.txt
     - if [[ ! -e ~/docker/test.txt ]]; then mkdir ~/docker/ ; echo "is there not"; echo "asdf" >> ~/docker/test.txt; else echo "not existing"; fi
+    - cat ~/docker/test.txt
 
   #test:
   #override:
