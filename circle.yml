@@ -1,0 +1,16 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+  override:
+    - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
+    - docker build -t imerso/slettmeg .
+    - mkdir -p ~/docker; docker save imerso/scan-worker:test > ~/docker/image.tar
+
+test:
+  override:
+    - docker run -d imerso/slettmeg
+
