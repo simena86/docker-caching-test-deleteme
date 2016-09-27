@@ -9,6 +9,7 @@ dependencies:
     - ls ~/docker 
     - docker images
     - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
+    - docker images
     - ls ~/docker
     - docker build -t imerso/slettmeg:test .
     - mkdir -p ~/docker; docker save imerso/slettmeg:test > ~/docker/image.tar
