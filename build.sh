@@ -31,6 +31,8 @@ else
     docker build -t "$IMAGE_FULL_NAME" .
 fi
 
+docker build -t "$IMAGE_FULL_NAME" .
+
 # Tag the image as being the correct one for this commit.
 # This is used in circle.yml to pick the correct image.
 echo "=====> Tagging image with commit SHA1: ${CIRCLE_SHA1}"
