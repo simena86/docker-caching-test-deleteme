@@ -12,7 +12,7 @@ dependencies:
     - docker images
     - ls ~/docker
     - docker build -t imerso/slettmeg:v1.1.1 .
-    #- mkdir -p ~/docker; docker save imerso/slettmeg:test > ~/docker/image.tar
+    - mkdir -p ~/docker; docker save imerso/slettmeg:v1.1.1 > ~/docker/image.tar
 
   #test:
   #override:
